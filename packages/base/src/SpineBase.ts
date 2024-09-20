@@ -87,6 +87,7 @@ export abstract class SpineBase<
         this._debug?.unregisterSpine(this);
         value?.registerSpine(this);
         this._debug = value;
+        console.log('debug', value);
     }
 
     abstract createSkeleton(spineData: ISkeletonData);
